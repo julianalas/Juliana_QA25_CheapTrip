@@ -1,0 +1,30 @@
+17:24:49.746 [main] INFO  tests.TestBase - Start test searchResultFromDataProviderIsPresent with data: [Riga, Podgorica]
+17:24:52.195 [main] INFO  tests.TestBase - PASSED: Test method searchResultFromDataProviderIsPresent
+17:24:52.195 [main] INFO  tests.TestBase - Stop test 
+17:24:52.196 [main] INFO  tests.TestBase - ======================================================================
+17:24:57.930 [main] INFO  tests.TestBase - Start test searchResultFromDataProviderIsPresent with data: [Vilnius, Prague]
+17:24:59.299 [main] INFO  tests.TestBase - PASSED: Test method searchResultFromDataProviderIsPresent
+17:24:59.299 [main] INFO  tests.TestBase - Stop test 
+17:24:59.299 [main] INFO  tests.TestBase - ======================================================================
+17:25:05.313 [main] INFO  tests.TestBase - Start test searchResultFromDataProviderIsPresent with data: [Berlin, Madrid]
+17:25:06.593 [main] INFO  tests.TestBase - PASSED: Test method searchResultFromDataProviderIsPresent
+17:25:06.593 [main] INFO  tests.TestBase - Stop test 
+17:25:06.593 [main] INFO  tests.TestBase - ======================================================================
+17:25:12.517 [main] INFO  tests.TestBase - Start test searchResultFromDataProviderIsPresent with data: [Luxembourg, Stockholm]
+17:25:14.476 [main] INFO  tests.TestBase - PASSED: Test method searchResultFromDataProviderIsPresent
+17:25:14.476 [main] INFO  tests.TestBase - Stop test 
+17:25:14.476 [main] INFO  tests.TestBase - ======================================================================
+17:25:20.510 [main] INFO  tests.TestBase - Start test searchResultFromDataProviderIsPresent with data: [Rome, Paris]
+17:25:22.369 [main] INFO  tests.TestBase - PASSED: Test method searchResultFromDataProviderIsPresent
+17:25:22.369 [main] INFO  tests.TestBase - Stop test 
+17:25:22.369 [main] INFO  tests.TestBase - ======================================================================
+17:25:28.262 [main] INFO  tests.TestBase - Start test searchResultFromDataProviderIsPresent with data: [Berlin, Bern]
+17:25:40.178 [main] ERROR tests.TestBase - FAILED: Test method searchResultFromDataProviderIsPresent
+
+17:25:40.178 [main] INFO  tests.TestBase - Stop test 
+17:25:40.178 [main] INFO  tests.TestBase - ======================================================================
+17:25:47.745 [main] INFO  tests.TestBase - Start test searchResultFromDataProviderIsPresent with data: [Moscow, London]
+17:25:59.590 [main] ERROR tests.TestBase - FAILED: Test method searchResultFromDataProviderIsPresent
+
+17:25:59.590 [main] INFO  tests.TestBase - Stop test 
+17:25:59.591 [main] INFO  tests.TestBase - ======================================================================

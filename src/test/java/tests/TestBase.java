@@ -20,6 +20,7 @@ public class TestBase {
     @BeforeMethod(alwaysRun = true)
     public void openBrowser(){
         ChromeOptions options = new ChromeOptions();
+        //options.addArguments("headless");
         options.addArguments("--window-size=1920,1200");
         driver = new ChromeDriver(options);
         driver.get("http://test70.lowcoststrip.com/");

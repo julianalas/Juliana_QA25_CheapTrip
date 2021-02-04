@@ -17,7 +17,7 @@ public class MainPageTests extends TestBase{
 
     @Test(priority = 2, groups = {"UI"})
     public void sloganValidationTest(){
-        String text = "CheapTrip. Плати меньше, посети больше!";
+        String text = " Плати меньше, посети больше!";
         assert mainPage.isSloganContainsText(text);
     }
 
@@ -26,11 +26,5 @@ public class MainPageTests extends TestBase{
         mainPage.selectEnglishLanguage();
         assert mainPage.isLanguageOnPageEnglish();
     }
-
-    /*@Test(priority = 1, groups = {"functional"})
-    public void selectStartPointInSearchModule(){
-        mainPage.selectStartPoint();
-
-    }*/
 
 }

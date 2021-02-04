@@ -11,27 +11,30 @@ import org.testng.annotations.BeforeMethod;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
 
 public class TestBase {
     WebDriver driver;
     Logger logger = LoggerFactory.getLogger(TestBase.class);
 
-
     @BeforeMethod(alwaysRun = true)
-    public void openBrowser(){
+    public void setup(Method method, Object[] parameter) {
+        logger.info("Start test: " + method.getName());
+        if (parameter.length != 0) {
+            logger.info(" --> With data: " + Arrays.asList(parameter));
+        }
         ChromeOptions options = new ChromeOptions();
         //options.addArguments("headless");
         options.addArguments("--window-size=1920,1200");
         driver = new ChromeDriver(options);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://test70.lowcoststrip.com/");
-    }
-    @BeforeMethod(alwaysRun = true)
-    public void startTest(Method m, Object[] p) {
-        logger.info("Start test " + m.getName() + " with data: " + Arrays.asList(p));
     }
 
     @AfterMethod(alwaysRun = true)
-    public void stopTest(ITestResult result) {
+    public void tearDown (ITestResult result) {
+        driver.quit();
+
         if (result.isSuccess()) {
             logger.info("PASSED: Test method " + result.getMethod().getMethodName());
         } else {
@@ -40,10 +43,10 @@ public class TestBase {
         logger.info("Stop test ");
         logger.info("======================================================================");
     }
-
-    @AfterMethod(alwaysRun = true)
-    public void tearDown(){
-        driver.quit();
-    }
-
 }
+
+
+
+
+
+

@@ -49,7 +49,7 @@ public class MainPage extends PageBase{
 
 
     public boolean isSloganContainsText(String text) {
-       return slogan.getText().contains(text);
+        return slogan.getText().contains(text);
 
     }
 

@@ -23,7 +23,7 @@ public class SearchTests extends TestBase{
         mainPage.clickOnLetsGoButton();
        // Thread.sleep(2000);
         Assert.assertTrue(mainPage.searchResultIsDisplayed(),"Search result for cities: " + cityFrom + ", " + cityTo + " is not displayed!");
-       //mainPage.clickOnNewSearchButton();
+
     }
 
     @Test(dataProviderClass = DataProviders.class, dataProvider = "validCityNameFromCSV")
@@ -32,8 +32,9 @@ public class SearchTests extends TestBase{
         mainPage.inputCityInToField(cityTo);
         mainPage.clickOnLetsGoButton();
          Assert.assertTrue(mainPage.searchResultIsDisplayed(),"Search result for cities: " + cityFrom + ", " + cityTo + " is not displayed!");
-        //mainPage.clickOnNewSearchButton();
     }
-
+    //Невалидные имена городов:
+    //Berlin;Bern
+    //Moscow;London
 
 }

@@ -1,4 +1,0 @@
-17:24:20.739 [main] INFO  tests.TestBase - Start test searchResultIsPresent with data: []
-17:24:22.367 [main] INFO  tests.TestBase - PASSED: Test method searchResultIsPresent
-17:24:22.367 [main] INFO  tests.TestBase - Stop test 
-17:24:22.367 [main] INFO  tests.TestBase - ======================================================================

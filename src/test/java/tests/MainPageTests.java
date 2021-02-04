@@ -16,9 +16,13 @@ public class MainPageTests extends TestBase{
 
 
     @Test(priority = 2, groups = {"UI"})
-    public void sloganValidationTest() throws InterruptedException {
+    public void sloganValidationTest() {
         String text = " Плати меньше, посети больше!";
-        Thread.sleep(1000);
+        try {
+            Thread.sleep(200);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         assert mainPage.isSloganContainsText(text);
     }
 

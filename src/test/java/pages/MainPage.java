@@ -3,6 +3,9 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import tests.TestBase;
 
 import java.util.List;
 
@@ -10,6 +13,7 @@ public class MainPage extends PageBase{
     public MainPage(WebDriver driver) {
         super(driver);
     }
+//    Logger logger = LoggerFactory.getLogger(TestBase.class);
 
     @FindBy(css = ".hide-xs.md.title-default.hydrated")
     WebElement slogan;
@@ -49,6 +53,7 @@ public class MainPage extends PageBase{
 
 
     public boolean isSloganContainsText(String text) {
+//        logger.info("Slogan =" + slogan.getText());
         return slogan.getText().contains(text);
 
     }
